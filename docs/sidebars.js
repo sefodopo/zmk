@@ -19,9 +19,11 @@ module.exports = {
       "features/underglow",
       "features/backlight",
       "features/battery",
+      "features/soft-off",
       "features/beta-testing",
     ],
     Behaviors: [
+      "behaviors/index",
       "behaviors/key-press",
       "behaviors/layers",
       "behaviors/misc",
@@ -35,12 +37,15 @@ module.exports = {
       "behaviors/tap-dance",
       "behaviors/caps-word",
       "behaviors/key-repeat",
+      "behaviors/sensor-rotate",
+      "behaviors/mouse-emulation",
       "behaviors/reset",
       "behaviors/bluetooth",
       "behaviors/outputs",
       "behaviors/underglow",
       "behaviors/backlight",
       "behaviors/power",
+      "behaviors/soft-off",
     ],
     Codes: [
       "codes/index",
@@ -51,7 +56,6 @@ module.exports = {
       "codes/applications",
       "codes/input-assist",
       "codes/power",
-      "codes/keymap-upgrader",
     ],
     Configuration: [
       "config/index",
@@ -70,6 +74,7 @@ module.exports = {
     ],
     Development: [
       "development/clean-room",
+      "development/pre-commit",
       "development/documentation",
       "development/setup",
       "development/build-flash",
